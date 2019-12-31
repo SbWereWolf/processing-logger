@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright © 2019
+  ~ Volkhin Nikolay <ulfnew@gmail.com> processing-logger
+  ~ 31.12.2019 17:59
+  -->
+
+<phpunit bootstrap="vendor/autoload.php"
+         backupStaticAttributes="false"
+         cacheTokens="false"
+         colors="true"
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         verbose="true"
+         forceCoversAnnotation="false"
+>
+    <testsuites>
+        <testsuite name="unit">
+            <directory suffix="Test.php">tests/unit</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/SbWereWolf</directory>
+        </whitelist>
+    </filter>
+</phpunit>
